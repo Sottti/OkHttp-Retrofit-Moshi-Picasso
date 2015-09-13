@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="indigo_700">#303F9F</color>
+    <color name="grey_200">#EEEEEE</color>
+
+    <color name="light_theme_default_background">@color/grey_200</color>
+    <color name="primary">@color/indigo_500</color>
+    <color name="primaryDark">@color/indigo_700</color>
+</resources>
