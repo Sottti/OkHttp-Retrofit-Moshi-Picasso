@@ -19,10 +19,10 @@ public class ApiRequests
      */
     public interface APIService
     {
-        @GET("/v2/55973508b0e9e4a71a02f05f")
+        @GET("55973508b0e9e4a71a02f05f")
         Call<DummyObject> getDummyObject();
 
-        @GET ("v2/5597d86a6344715505576725")
+        @GET ("5597d86a6344715505576725")
         Call<List<DummyObject>> getDummyObjectList();
     }
 
@@ -34,7 +34,7 @@ public class ApiRequests
         return
                 new Retrofit
                         .Builder()
-                        .baseUrl("http://www.mocky.io/")
+                        .baseUrl("http://www.mocky.io/v2/")
                         .addConverterFactory(MoshiConverterFactory.create())
                         .build()
                         .create(APIService.class)
@@ -49,7 +49,7 @@ public class ApiRequests
         return
                 new Retrofit
                         .Builder()
-                        .baseUrl("http://www.mocky.io/")
+                        .baseUrl("http://www.mocky.io/v2/")
                         .addConverterFactory(MoshiConverterFactory.create())
                         .build()
                         .create(APIService.class)
