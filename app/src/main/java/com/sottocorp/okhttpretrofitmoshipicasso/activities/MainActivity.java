@@ -14,7 +14,7 @@ import com.sottocorp.okhttpretrofitmoshipicasso.R;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
-    private Button mJSONObjectSample, mJSONArraySample, mNetworkImageViewSample;
+    private Button mJSONObjectSample, mJSONArraySample, mImageLoading, mImageTransformation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,11 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mJSONObjectSample = (Button) findViewById(R.id.json_object);
         mJSONArraySample = (Button) findViewById(R.id.json_array);
-        mNetworkImageViewSample = (Button) findViewById(R.id.network_image_view);
+        mImageLoading = (Button) findViewById(R.id.image_loading);
+        mImageTransformation = (Button) findViewById(R.id.image_transformation);
 
         mJSONObjectSample.setOnClickListener(this);
         mJSONArraySample.setOnClickListener(this);
-        mNetworkImageViewSample.setOnClickListener(this);
+        mImageLoading.setOnClickListener(this);
+        mImageTransformation.setOnClickListener(this);
     }
 
     @Override
@@ -44,9 +46,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             startActivity(new Intent(this, JSONArrayActivity.class));
         }
-        else if (view == mNetworkImageViewSample)
+        else if (view == mImageLoading)
         {
             startActivity(new Intent(this, ImageLoadingActivity.class));
+        }
+        else if (view == mImageTransformation)
+        {
+            startActivity(new Intent(this, ImageTransformationActivity.class));
         }
     }
 }

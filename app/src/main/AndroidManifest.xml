@@ -38,6 +38,11 @@
             android:label="@string/activity_title_image_loading"
             android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity"/>
 
+        <activity
+            android:name=".activities.ImageTransformationActivity"
+            android:label="@string/activity_title_image_transformation"
+            android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity"/>
+
     </application>
 
 </manifest>

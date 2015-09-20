@@ -9,9 +9,11 @@
     <string name="activity_title_JSON_object">JSON Object</string>
     <string name="activity_title_JSON_array">JSON Array</string>
     <string name="activity_title_image_loading">Image Loading</string>
+    <string name="activity_title_image_transformation">Image Transformation</string>
     <string name="json_object">JSON Object</string>
     <string name="json_array">JSON Array</string>
     <string name="image_loading">Image Loading</string>
+    <string name="image_transformation">Image Transformation</string>
 
     <string name="error_text">Something went wrong</string>
 

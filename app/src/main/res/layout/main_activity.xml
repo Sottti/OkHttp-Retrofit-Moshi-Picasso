@@ -58,11 +58,18 @@
                 android:text="@string/json_array"/>
 
             <Button
-                android:id="@+id/network_image_view"
+                android:id="@+id/image_loading"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/image_loading"/>
+
+            <Button
+                android:id="@+id/image_transformation"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/image_transformation"/>
 
         </LinearLayout>
 
