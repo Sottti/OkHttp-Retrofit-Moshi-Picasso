@@ -16,6 +16,7 @@ import com.sottocorp.okhttpretrofitmoshipicasso.network.ApiRequests;
 
 import retrofit.Callback;
 import retrofit.Response;
+import retrofit.Retrofit;
 
 /**
  * Demonstrates how to make a JSON Object request
@@ -49,7 +50,7 @@ public class JSONObjectActivity extends AppCompatActivity
         ApiRequests.getDummyObjectCall().enqueue(new Callback<DummyObject>()
         {
             @Override
-            public void onResponse(Response<DummyObject> response)
+            public void onResponse(Response<DummyObject> response, Retrofit retrofit)
             {
                 // Deal with the DummyObject here
                 mProgressBar.setVisibility(View.GONE);

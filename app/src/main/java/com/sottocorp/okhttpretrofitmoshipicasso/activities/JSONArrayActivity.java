@@ -18,6 +18,7 @@ import java.util.List;
 
 import retrofit.Callback;
 import retrofit.Response;
+import retrofit.Retrofit;
 
 /**
  * Demonstrates how to make a JSON Object request
@@ -53,7 +54,7 @@ public class JSONArrayActivity extends AppCompatActivity
         ApiRequests.getDummyObjectListCall().enqueue(new Callback<List<DummyObject>>()
         {
             @Override
-            public void onResponse(Response<List<DummyObject>> response)
+            public void onResponse(Response<List<DummyObject>> response, Retrofit retrofit)
             {
                 // Deal with the DummyObject here
                 mProgressBar.setVisibility(View.GONE);
