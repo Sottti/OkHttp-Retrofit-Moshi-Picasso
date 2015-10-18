@@ -16,13 +16,25 @@ android {
             minifyEnabled false
         }
     }
+
+    productFlavors {
+        dev {
+            applicationId 'com.sottocorp.okhttpretrofitmoshipicasso.dev'
+            buildConfigField 'String', 'apiDomainName', '"http://www.mocky.io"'
+        }
+
+        live {
+            applicationId 'com.sottocorp.okhttpretrofitmoshipicasso'
+            buildConfigField 'String', 'apiDomainName', '"http://www.mocky.io"'
+        }
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.android.support:recyclerview-v7:23.0.1'
-    compile 'com.android.support:support-annotations:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile 'com.android.support:support-annotations:23.1.0'
     compile 'com.squareup.retrofit:converter-moshi:2.0.0-beta2'
 }

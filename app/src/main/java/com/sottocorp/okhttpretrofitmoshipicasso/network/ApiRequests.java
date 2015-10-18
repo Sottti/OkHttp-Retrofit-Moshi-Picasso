@@ -5,8 +5,6 @@ import com.sottocorp.okhttpretrofitmoshipicasso.dataModel.DummyObject;
 import java.util.List;
 
 import retrofit.Call;
-import retrofit.MoshiConverterFactory;
-import retrofit.Retrofit;
 import retrofit.http.GET;
 
 /**
@@ -31,14 +29,10 @@ public class ApiRequests
      */
     public static Call<DummyObject> getDummyObjectCall()
     {
-        return
-                new Retrofit
-                        .Builder()
-                        .baseUrl("http://www.mocky.io")
-                        .addConverterFactory(MoshiConverterFactory.create())
-                        .build()
-                        .create(APIService.class)
-                        .getDummyObject();
+        return ApiClient
+                .getApiClient()
+                .create(APIService.class)
+                .getDummyObject();
     }
 
     /**
@@ -46,13 +40,9 @@ public class ApiRequests
      */
     public static Call<List<DummyObject>> getDummyObjectListCall()
     {
-        return
-                new Retrofit
-                        .Builder()
-                        .baseUrl("http://www.mocky.io")
-                        .addConverterFactory(MoshiConverterFactory.create())
-                        .build()
-                        .create(APIService.class)
-                        .getDummyObjectList();
+        return ApiClient
+                .getApiClient()
+                .create(APIService.class)
+                .getDummyObjectList();
     }
 }
