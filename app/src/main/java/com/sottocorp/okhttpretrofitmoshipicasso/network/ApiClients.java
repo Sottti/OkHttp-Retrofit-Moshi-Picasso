@@ -5,10 +5,7 @@ import com.sottocorp.okhttpretrofitmoshipicasso.BuildConfig;
 import retrofit.MoshiConverterFactory;
 import retrofit.Retrofit;
 
-/**
- * Api clients
- */
-public class ApiClient
+public class ApiClients
 {
     private static Retrofit mClient;
 

@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
 import com.sottocorp.okhttpretrofitmoshipicasso.dataModel.DummyObject;
-import com.sottocorp.okhttpretrofitmoshipicasso.network.ApiRequests;
+import com.sottocorp.okhttpretrofitmoshipicasso.network.ApiCalls;
 
 import java.util.List;
 
@@ -51,7 +51,7 @@ public class JSONArrayActivity extends AppCompatActivity
         mErrorView = (LinearLayout) findViewById(R.id.error_view);
         mContent = (LinearLayout) findViewById(R.id.content);
 
-        ApiRequests.getDummyObjectListCall().enqueue(new Callback<List<DummyObject>>()
+        ApiCalls.getDummyObjectListCall().enqueue(new Callback<List<DummyObject>>()
         {
             @Override
             public void onResponse(Response<List<DummyObject>> response, Retrofit retrofit)
