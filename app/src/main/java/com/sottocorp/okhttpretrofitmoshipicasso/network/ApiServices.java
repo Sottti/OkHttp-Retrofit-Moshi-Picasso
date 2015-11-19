@@ -20,7 +20,7 @@ public class ApiServices
         Call<List<DummyObject>> getDummyObjectList();
     }
 
-    public static DummyService getDummyService()
+    public static synchronized DummyService getDummyService()
     {
         if (mDummyService == null)
         {

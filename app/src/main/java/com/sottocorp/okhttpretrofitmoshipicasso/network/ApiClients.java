@@ -9,7 +9,7 @@ public class ApiClients
 {
     private static Retrofit mClient;
 
-    public static Retrofit getApiClient()
+    public static synchronized Retrofit getApiClient()
     {
         if (mClient == null)
         {
