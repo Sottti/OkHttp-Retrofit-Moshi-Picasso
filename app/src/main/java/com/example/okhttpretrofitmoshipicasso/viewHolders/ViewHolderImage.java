@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.viewHolders;
+package com.example.okhttpretrofitmoshipicasso.viewHolders;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

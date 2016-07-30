@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.dataModel;
+package com.example.okhttpretrofitmoshipicasso.dataModel;
 
 /**
  * Represents a dummy object

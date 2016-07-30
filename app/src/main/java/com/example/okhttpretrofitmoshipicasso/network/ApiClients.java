@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.network;
+package com.example.okhttpretrofitmoshipicasso.network;
 
 import com.sottocorp.okhttpretrofitmoshipicasso.BuildConfig;
 

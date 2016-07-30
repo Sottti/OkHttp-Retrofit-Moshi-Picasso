@@ -1,6 +1,6 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.network;
+package com.example.okhttpretrofitmoshipicasso.network;
 
-import com.sottocorp.okhttpretrofitmoshipicasso.dataModel.DummyObject;
+import com.example.okhttpretrofitmoshipicasso.dataModel.DummyObject;
 
 import java.util.List;
 

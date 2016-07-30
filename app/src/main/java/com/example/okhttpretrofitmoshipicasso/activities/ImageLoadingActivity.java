@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.activities;
+package com.example.okhttpretrofitmoshipicasso.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
-import com.sottocorp.okhttpretrofitmoshipicasso.adapters.ImageLoadingRecyclerViewAdapter;
+import com.example.okhttpretrofitmoshipicasso.adapters.ImageLoadingRecyclerViewAdapter;
 
 import java.util.Arrays;
 import java.util.List;

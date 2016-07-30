@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.activities;
+package com.example.okhttpretrofitmoshipicasso.activities;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,10 +11,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
-import com.sottocorp.okhttpretrofitmoshipicasso.dataModel.DummyObject;
-import com.sottocorp.okhttpretrofitmoshipicasso.network.ApiCalls;
-
-import java.util.List;
+import com.example.okhttpretrofitmoshipicasso.dataModel.DummyObject;
+import com.example.okhttpretrofitmoshipicasso.network.ApiCalls;
 
 import retrofit.Callback;
 import retrofit.Response;
@@ -23,20 +21,22 @@ import retrofit.Retrofit;
 /**
  * Demonstrates how to make a JSON Object request
  */
-public class JSONArrayActivity extends AppCompatActivity
+public class JSONObjectActivity extends AppCompatActivity
 {
+    private TextView mTitle, mBody;
     private ProgressBar mProgressBar;
     private LinearLayout mContent, mErrorView;
-    private TextView mTitle, mBody, mSecondTitle, mSecondBody;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.json_array_request);
+        setContentView(R.layout.json_object_request);
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
-        if (getSupportActionBar() != null) {
+        if (getSupportActionBar() != null)
+        {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
@@ -44,21 +44,18 @@ public class JSONArrayActivity extends AppCompatActivity
         mTitle = (TextView) findViewById(R.id.my_title);
         mBody = (TextView) findViewById(R.id.my_body);
         mBody.setMovementMethod(new ScrollingMovementMethod());
-        mBody.setMovementMethod(new ScrollingMovementMethod());
-        mSecondTitle = (TextView) findViewById(R.id.my_title_2);
-        mSecondBody = (TextView) findViewById(R.id.my_body_2);
-        mSecondBody.setMovementMethod(new ScrollingMovementMethod());
         mErrorView = (LinearLayout) findViewById(R.id.error_view);
         mContent = (LinearLayout) findViewById(R.id.content);
 
-        ApiCalls.getDummyObjectListCall().enqueue(new Callback<List<DummyObject>>()
+        ApiCalls.getDummyObjectCall().enqueue(new Callback<DummyObject>()
         {
             @Override
-            public void onResponse(Response<List<DummyObject>> response, Retrofit retrofit)
+            public void onResponse(Response<DummyObject> response, Retrofit retrofit)
             {
                 // Deal with the DummyObject here
                 mProgressBar.setVisibility(View.GONE);
                 mContent.setVisibility(View.VISIBLE);
+
                 setData(response.body());
             }
 
@@ -75,13 +72,11 @@ public class JSONArrayActivity extends AppCompatActivity
     /**
      * Sets the data in the UI
      *
-     * @param dummyObjectList is the object's array to get the data from
+     * @param dummyObject is the object to get the data from
      */
-    private void setData(@NonNull final List<DummyObject> dummyObjectList)
+    private void setData(@NonNull final DummyObject dummyObject)
     {
-        mTitle.setText(dummyObjectList.get(0).getTitle());
-        mBody.setText(dummyObjectList.get(0).getBody());
-        mSecondTitle.setText(dummyObjectList.get(1).getTitle());
-        mSecondBody.setText(dummyObjectList.get(1).getBody());
+        mTitle.setText(dummyObject.getTitle());
+        mBody.setText(dummyObject.getBody());
     }
 }

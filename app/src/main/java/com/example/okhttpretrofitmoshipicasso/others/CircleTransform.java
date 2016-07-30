@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.others;
+package com.example.okhttpretrofitmoshipicasso.others;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;

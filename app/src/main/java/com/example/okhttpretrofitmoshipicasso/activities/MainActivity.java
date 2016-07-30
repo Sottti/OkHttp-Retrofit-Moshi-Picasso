@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.activities;
+package com.example.okhttpretrofitmoshipicasso.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

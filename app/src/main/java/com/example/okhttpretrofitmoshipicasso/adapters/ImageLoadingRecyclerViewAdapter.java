@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.adapters;
+package com.example.okhttpretrofitmoshipicasso.adapters;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
-import com.sottocorp.okhttpretrofitmoshipicasso.viewHolders.ViewHolderImage;
+import com.example.okhttpretrofitmoshipicasso.viewHolders.ViewHolderImage;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.activities;
+package com.example.okhttpretrofitmoshipicasso.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
-import com.sottocorp.okhttpretrofitmoshipicasso.others.CircleTransform;
+import com.example.okhttpretrofitmoshipicasso.others.CircleTransform;
 import com.squareup.picasso.Picasso;
 
 /**
