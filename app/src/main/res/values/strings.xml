@@ -4,8 +4,6 @@
 
     <string name="app_name">Networking II</string>
 
-    <string name="obi_wan_kenobi_sentence">Network well, padawan</string>
-
     <string name="activity_title_JSON_object">JSON Object</string>
     <string name="activity_title_JSON_array">JSON Array</string>
     <string name="activity_title_image_loading">Image Loading</string>
