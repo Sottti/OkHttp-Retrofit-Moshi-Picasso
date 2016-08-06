@@ -11,4 +11,7 @@
     <dimen name="yoda_height">160dp</dimen>
 
     <dimen name="progress_bar_circular_size">48dp</dimen>
+
+    <dimen name="elevation_app_bar">4dp</dimen>
+
 </resources>

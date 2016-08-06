@@ -9,28 +9,42 @@ import android.widget.Button;
 
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
 
-/**
- * Launches the different samples
- */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
-    private Button mJSONObjectSample, mJSONArraySample, mImageLoading, mImageTransformation;
+    private Button mJsonObjectSample, mJsonArraySample, mImageLoading, mImageTransformation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        init();
+    }
 
+    private void init()
+    {
+        setUpToolbar();
+        bindViews();
+        setUpViews();
+    }
+
+    private void setUpToolbar()
+    {
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
+    }
 
-        mJSONObjectSample = (Button) findViewById(R.id.json_object);
-        mJSONArraySample = (Button) findViewById(R.id.json_array);
+    private void bindViews()
+    {
+        mJsonObjectSample = (Button) findViewById(R.id.json_object);
+        mJsonArraySample = (Button) findViewById(R.id.json_array);
         mImageLoading = (Button) findViewById(R.id.image_loading);
         mImageTransformation = (Button) findViewById(R.id.image_transformation);
+    }
 
-        mJSONObjectSample.setOnClickListener(this);
-        mJSONArraySample.setOnClickListener(this);
+    private void setUpViews()
+    {
+        mJsonObjectSample.setOnClickListener(this);
+        mJsonArraySample.setOnClickListener(this);
         mImageLoading.setOnClickListener(this);
         mImageTransformation.setOnClickListener(this);
     }
@@ -38,13 +52,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view)
     {
-        if (view == mJSONObjectSample)
+        if (view == mJsonObjectSample)
         {
-            startActivity(new Intent(this, JSONObjectActivity.class));
+            startActivity(new Intent(this, JsonObjectActivity.class));
         }
-        else if (view == mJSONArraySample)
+        else if (view == mJsonArraySample)
         {
-            startActivity(new Intent(this, JSONArrayActivity.class));
+            startActivity(new Intent(this, JsonArrayActivity.class));
         }
         else if (view == mImageLoading)
         {

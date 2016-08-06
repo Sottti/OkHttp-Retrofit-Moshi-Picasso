@@ -6,14 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.okhttpretrofitmoshipicasso.viewHolders.ImageViewHolder;
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
-import com.example.okhttpretrofitmoshipicasso.viewHolders.ViewHolderImage;
 
 import java.util.List;
 
-/**
- * Adapter for the image loading recycler view
- */
 public class ImageLoadingRecyclerViewAdapter extends RecyclerView.Adapter
 {
     private final List<String> mImages;
@@ -28,17 +25,13 @@ public class ImageLoadingRecyclerViewAdapter extends RecyclerView.Adapter
     {
         final View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.view_holder_image_view, parent, false);
-
-        return new ViewHolderImage(view);
+        return new ImageViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position)
     {
-        final ViewHolderImage viewHolderImage =
-                (ViewHolderImage) holder;
-
-        viewHolderImage.setData(mImages.get(position));
+        ((ImageViewHolder) holder).onBind(mImages.get(position));
     }
 
     @Override

@@ -4,7 +4,7 @@ import com.example.okhttpretrofitmoshipicasso.dataModel.DummyObject;
 
 import java.util.List;
 
-import retrofit.Call;
+import retrofit2.Call;
 
 public class ApiCalls
 {

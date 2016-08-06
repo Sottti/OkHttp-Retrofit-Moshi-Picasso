@@ -2,8 +2,8 @@ package com.example.okhttpretrofitmoshipicasso.network;
 
 import com.sottocorp.okhttpretrofitmoshipicasso.BuildConfig;
 
-import retrofit.MoshiConverterFactory;
-import retrofit.Retrofit;
+import retrofit2.Retrofit;
+import retrofit2.converter.moshi.MoshiConverterFactory;
 
 public class ApiClients
 {

@@ -24,12 +24,12 @@
         </activity>
 
         <activity
-            android:name="com.example.okhttpretrofitmoshipicasso.activities.JSONObjectActivity"
+            android:name="com.example.okhttpretrofitmoshipicasso.activities.JsonObjectActivity"
             android:label="@string/activity_title_JSON_object"
             android:parentActivityName="com.example.okhttpretrofitmoshipicasso.activities.MainActivity"/>
 
         <activity
-            android:name="com.example.okhttpretrofitmoshipicasso.activities.JSONArrayActivity"
+            android:name="com.example.okhttpretrofitmoshipicasso.activities.JsonArrayActivity"
             android:label="@string/activity_title_JSON_array"
             android:parentActivityName="com.example.okhttpretrofitmoshipicasso.activities.MainActivity"/>
 

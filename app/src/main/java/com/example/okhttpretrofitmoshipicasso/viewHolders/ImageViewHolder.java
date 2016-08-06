@@ -9,34 +9,30 @@ import android.widget.ImageView;
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
 import com.squareup.picasso.Picasso;
 
-/**
- * View holder for an image
- */
-public class ViewHolderImage extends RecyclerView.ViewHolder
+public class ImageViewHolder extends RecyclerView.ViewHolder
 {
     private Context mContext;
-    private final ImageView mImageView;
+    private ImageView mImageView;
 
-    public ViewHolderImage(@NonNull final View itemView)
+    public ImageViewHolder(@NonNull final View itemView)
     {
         super(itemView);
+        init(itemView);
+    }
 
+    private void init(final @NonNull View itemView)
+    {
         mContext = itemView.getContext();
         mImageView = (ImageView) itemView.findViewById(R.id.imageView);
     }
 
-    /**
-     * Sets the data in the view holder
-     *
-     * @param imageUrl is the image Url to get the image
-     */
-    public void setData(@NonNull final String imageUrl)
+    public void onBind(@NonNull final String imageUrl)
     {
         Picasso
                 .with(mContext)
                 .load(imageUrl)
-                .placeholder(R.drawable.ic_sun_smile)
-                .error(R.drawable.ic_cloud_sad)
+                .placeholder(R.drawable.image_sun_smile)
+                .error(R.drawable.image_cloud_sad)
                 .into(mImageView);
     }
 }
