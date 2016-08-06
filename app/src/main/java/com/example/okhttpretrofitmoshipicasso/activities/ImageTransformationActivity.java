@@ -9,9 +9,6 @@ import com.example.okhttpretrofitmoshipicasso.others.CircleTransform;
 import com.sottocorp.okhttpretrofitmoshipicasso.R;
 import com.squareup.picasso.Picasso;
 
-/**
- * Demonstrates how to load circle images using transformations
- */
 public class ImageTransformationActivity extends AppCompatActivity
 {
     private final static String sImageUrl = "https://goo.gl/XOXAXG";

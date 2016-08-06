@@ -12,9 +12,6 @@ import com.sottocorp.okhttpretrofitmoshipicasso.R;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Demonstrates how to load images using Picasso
- */
 public class ImageLoadingActivity extends AppCompatActivity
 {
     private final static List<String> sImages = Arrays.asList

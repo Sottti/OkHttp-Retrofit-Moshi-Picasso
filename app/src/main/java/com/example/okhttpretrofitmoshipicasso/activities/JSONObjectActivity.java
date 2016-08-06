@@ -18,9 +18,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * Demonstrates how to make a JSON Object request
- */
 public class JsonObjectActivity extends AppCompatActivity
 {
     private TextView mTitle, mBody;

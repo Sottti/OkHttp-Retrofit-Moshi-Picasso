@@ -20,9 +20,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * Demonstrates how to make a JSON Object request
- */
 public class JsonArrayActivity extends AppCompatActivity
 {
     private ProgressBar mProgressBar;
