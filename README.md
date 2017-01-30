@@ -2,6 +2,6 @@
 
 This is a sample app which demonstrates and shows what it's explained in a Medium article about networking in Android.
 
-Check out this article for further information:
+Check out the next article for further information:
 
 [Android Networking II: OkHttp, Retrofit, Moshi and Picasso](xxxxxxxx)
