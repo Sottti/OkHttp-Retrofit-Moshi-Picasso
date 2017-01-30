@@ -4,4 +4,4 @@ This is a sample app which demonstrates and shows what it's explained in a Mediu
 
 Check out this article for further information:
 
-1. [Android Networking II: OkHttp, Retrofit, Moshi and Picasso](xxxxxxxx)
+[Android Networking II: OkHttp, Retrofit, Moshi and Picasso](xxxxxxxx)
