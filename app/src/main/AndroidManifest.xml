@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sottocorp.okhttpretrofitmoshipicasso">
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.sottocorp.okhttpretrofitmoshipicasso">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.INTERNET"/>
 
-    <application
-        android:allowBackup="true"
-        android:label="@string/app_name"
-        android:fullBackupContent="false"
-        android:icon="@mipmap/ic_launcher"
-        android:theme="@style/AppTheme">
+  <application
+    android:allowBackup="true"
+    android:fullBackupContent="false"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme">
 
-        <activity
-            android:name="com.example.okhttpretrofitmoshipicasso.activities.MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+    <activity
+      android:label="@string/app_name"
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
 
-        <activity
-            android:name="com.example.okhttpretrofitmoshipicasso.activities.JsonObjectActivity"
-            android:label="@string/activity_title_JSON_object"
-            android:parentActivityName="com.example.okhttpretrofitmoshipicasso.activities.MainActivity"/>
+    <activity
+      android:label="@string/activity_title_JSON_object"
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.JsonObjectActivity"
+      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity"/>
 
-        <activity
-            android:name="com.example.okhttpretrofitmoshipicasso.activities.JsonArrayActivity"
-            android:label="@string/activity_title_JSON_array"
-            android:parentActivityName="com.example.okhttpretrofitmoshipicasso.activities.MainActivity"/>
+    <activity
+      android:label="@string/activity_title_JSON_array"
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.JsonArrayActivity"
+      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity"/>
 
-        <activity
-            android:name="com.example.okhttpretrofitmoshipicasso.activities.ImageLoadingActivity"
-            android:label="@string/activity_title_image_loading"
-            android:parentActivityName="com.example.okhttpretrofitmoshipicasso.activities.MainActivity"/>
+    <activity
+      android:label="@string/activity_title_image_loading"
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.ImageLoadingActivity"
+      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity"/>
 
-        <activity
-            android:name="com.example.okhttpretrofitmoshipicasso.activities.ImageTransformationActivity"
-            android:label="@string/activity_title_image_transformation"
-            android:parentActivityName="com.example.okhttpretrofitmoshipicasso.activities.MainActivity"/>
+    <activity
+      android:label="@string/activity_title_image_transformation"
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.ImageTransformationActivity"
+      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity"/>
 
-    </application>
+  </application>
 
 </manifest>
