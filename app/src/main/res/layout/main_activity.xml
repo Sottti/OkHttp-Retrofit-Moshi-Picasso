@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:orientation="vertical">
 
-  <include layout="@layout/toolbar"/>
+  <include layout="@layout/toolbar" />
 
   <ImageView
     android:layout_width="match_parent"
@@ -18,7 +17,7 @@
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:src="@drawable/obi_wan_kenobi"
-    tools:ignore="ContentDescription"/>
+    tools:ignore="ContentDescription" />
 
   <Button
     android:id="@+id/json_object"
@@ -29,7 +28,7 @@
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
-    android:text="@string/json_object"/>
+    android:text="@string/json_object" />
 
   <Button
     android:id="@+id/json_array"
@@ -40,7 +39,7 @@
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
-    android:text="@string/json_array"/>
+    android:text="@string/json_array" />
 
   <Button
     android:id="@+id/image_loading"
@@ -51,7 +50,7 @@
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
-    android:text="@string/image_loading"/>
+    android:text="@string/image_loading" />
 
   <Button
     android:id="@+id/image_transformation"
@@ -63,6 +62,6 @@
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
-    android:text="@string/image_transformation"/>
+    android:text="@string/image_transformation" />
 
 </LinearLayout>
