@@ -2,6 +2,7 @@ package com.sottocorp.okhttpretrofitmoshipicasso.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -29,6 +30,10 @@ public class ImageLoadingActivity extends AppCompatActivity {
           "https://lh3.googleusercontent.com/5H2ql2TAP0dw_U2kNEP9__nbyBrbvX9Lek0qW3i2K-rF=w950-h713-no",
           "https://lh3.googleusercontent.com/6iA-Q8DyXPOIASEJWMBU1szFzd9isijp5HbDhB17-Q-O=w950-h713-no"
       );
+
+  static {
+    AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+  }
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
