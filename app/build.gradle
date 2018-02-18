@@ -1,17 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'android-O'
-    buildToolsVersion '26.0.0-rc2'
+    compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         applicationId "com.sottocorp.okhttpretrofitmoshipicasso"
         vectorDrawables.useSupportLibrary = true
-        minSdkVersion 16
-        targetSdkVersion 26
-        versionCode 1
         versionName "1.0"
+        versionCode 1
     }
+
+    dataBinding {
+        enabled = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -27,21 +31,17 @@ android {
             buildConfigField 'String', 'apiDomainName', '"http://www.mocky.io"'
         }
     }
-
-    dexOptions {
-        javaMaxHeapSize "3g"
-    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.squareup.okio:okio:1.13.0'
-    compile 'com.squareup.moshi:moshi:1.5.0'
-    compile 'com.squareup.okhttp3:okhttp:3.8.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.squareup.retrofit2:converter-moshi:2.3.0'
-    compile 'com.android.support:appcompat-v7:26.0.0-beta1'
-    compile 'com.android.support:recyclerview-v7:26.0.0-beta1'
-    compile 'com.android.support:support-annotations:26.0.0-beta1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttpVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:support-annotations:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
+    implementation "com.squareup.moshi:moshi:$rootProject.ext.moshiVersion"
+    implementation "com.squareup.picasso:picasso:$rootProject.ext.picassoVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$rootProject.ext.retrofitVersion"
 }
