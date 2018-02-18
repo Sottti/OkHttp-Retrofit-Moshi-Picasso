@@ -1,15 +1,15 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.network;
+package com.sottocorp.okhttpretrofitmoshipicasso.data;
 
-import com.sottocorp.okhttpretrofitmoshipicasso.dataModel.DummyObject;
+import com.sottocorp.okhttpretrofitmoshipicasso.model.DummyObject;
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public class ApiServices {
+class ApiServices {
 
   private static DummyService mDummyService;
 
-  public static synchronized DummyService getDummyService() {
+  static synchronized DummyService getDummyService() {
     if (mDummyService == null) {
       mDummyService = ApiClients
           .getApiClient()

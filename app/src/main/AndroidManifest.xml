@@ -14,7 +14,7 @@
 
     <activity
       android:label="@string/app_name"
-      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity">
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.ui.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
@@ -24,23 +24,23 @@
 
     <activity
       android:label="@string/activity_title_JSON_object"
-      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.JsonObjectActivity"
-      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity" />
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.ui.JsonObjectActivity"
+      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.ui.MainActivity" />
 
     <activity
       android:label="@string/activity_title_JSON_array"
-      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.JsonArrayActivity"
-      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity" />
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.ui.JsonArrayActivity"
+      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.ui.MainActivity" />
 
     <activity
       android:label="@string/activity_title_image_loading"
-      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.ImageLoadingActivity"
-      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity" />
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.ui.ImageLoadingActivity"
+      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.ui.MainActivity" />
 
     <activity
       android:label="@string/activity_title_image_transformation"
-      android:name="com.sottocorp.okhttpretrofitmoshipicasso.activities.ImageTransformationActivity"
-      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.activities.MainActivity" />
+      android:name="com.sottocorp.okhttpretrofitmoshipicasso.ui.ImageTransformationActivity"
+      android:parentActivityName="com.sottocorp.okhttpretrofitmoshipicasso.ui.MainActivity" />
 
   </application>
 

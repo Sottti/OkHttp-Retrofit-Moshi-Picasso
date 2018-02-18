@@ -1,4 +1,4 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.dataModel;
+package com.sottocorp.okhttpretrofitmoshipicasso.model;
 
 public class DummyObject {
 

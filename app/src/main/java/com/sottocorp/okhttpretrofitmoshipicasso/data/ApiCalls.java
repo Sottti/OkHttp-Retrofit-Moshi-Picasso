@@ -1,6 +1,6 @@
-package com.sottocorp.okhttpretrofitmoshipicasso.network;
+package com.sottocorp.okhttpretrofitmoshipicasso.data;
 
-import com.sottocorp.okhttpretrofitmoshipicasso.dataModel.DummyObject;
+import com.sottocorp.okhttpretrofitmoshipicasso.model.DummyObject;
 import java.util.List;
 import retrofit2.Call;
 

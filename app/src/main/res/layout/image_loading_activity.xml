@@ -1,0 +1,34 @@
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+      android:id="@+id/include_toolbar"
+      layout="@layout/toolbar"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:orientation="vertical"
+      app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/include_toolbar"
+      tools:listitem="@layout/image_loading_vh"/>
+
+  </android.support.constraint.ConstraintLayout>
+
+
+</layout>
