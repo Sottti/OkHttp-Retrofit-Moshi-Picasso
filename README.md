@@ -17,7 +17,7 @@ image transformations.
 This repository accompanies the article
 [Android Networking II: OkHttp, Retrofit, Moshi and Picasso](https://medium.com/@sotti/android-networking-ii-okhttp-retrofit-moshi-and-picasso-c381f6c0efd8).
 
-## What It Demonstrates
+## ✨ What It Demonstrates
 
 - A singleton Retrofit client configured with `MoshiConverterFactory`.
 - Retrofit service interfaces for JSON object and JSON array requests.
@@ -29,7 +29,7 @@ This repository accompanies the article
 - A custom Picasso `Transformation` for circular image cropping.
 - Data Binding for simple click handlers and screen bindings.
 
-## Demo Screens
+## 🖼️ Demo Screens
 
 | Screen | What It Shows |
 | --- | --- |
@@ -38,33 +38,7 @@ This repository accompanies the article
 | `ImageLoadingActivity` | Load a scrolling list of remote images with Picasso. |
 | `ImageTransformationActivity` | Load one image and apply a circular Picasso transformation. |
 
-## Request Flow
-
-```mermaid
-flowchart LR
-    A["Activity"] --> B["ApiCalls"]
-    B --> C["Retrofit service"]
-    C --> D["OkHttp"]
-    D --> E["Network"]
-    E --> F["Moshi model"]
-    F --> G["Callback"]
-    G --> H["UI state"]
-```
-
-## Project Shape
-
-| Area | Files |
-| --- | --- |
-| Retrofit client | `ApiClients.java` |
-| Retrofit services | `ApiServices.java` |
-| Call helpers | `ApiCalls.java` |
-| Models | `DummyObject.java` |
-| JSON screens | `JsonObjectActivity.java`, `JsonArrayActivity.java` |
-| Image screens | `ImageLoadingActivity.java`, `ImageTransformationActivity.java` |
-| Picasso helpers | `ImageLoadingUtils.java`, `CircleTransform.java` |
-| UI launcher | `MainActivity.java` |
-
-## Tech Stack
+## ⚙️ Tech Stack
 
 - Java
 - Android Gradle Plugin 3.0.1
@@ -78,7 +52,7 @@ flowchart LR
 - Data Binding
 - RecyclerView and ConstraintLayout
 
-## Run It
+## 🚀 Run It
 
 This repo is pinned to 2018 Android tooling. For the least friction, use an
 Android Studio/JDK setup compatible with AGP 3.0.1 and Gradle 4.5.1.
@@ -92,7 +66,7 @@ The sample uses old public demo endpoints and image URLs. If any network call no
 longer responds, the app still remains useful as a reference for Retrofit,
 Moshi, Picasso, callbacks, cancellation, and image transformations.
 
-## Verification
+## 🧪 Verification
 
 No automated test suite is included in this historical sample. The practical
 sanity check is to build the debug app:
@@ -101,14 +75,14 @@ sanity check is to build the debug app:
 ./gradlew :app:assembleLiveDebug
 ```
 
-## Status
+## 📌 Status
 
 This is a historical sample for an old Android networking article series, not a
 modern networking template. Its value today is as a compact reference for how
 OkHttp, Retrofit, Moshi, and Picasso were commonly wired together in a
 pre-AndroidX Java app.
 
-## License
+## 📜 License
 
 The original README declared this repository to be MIT licensed. A standalone
 `LICENSE` file is not currently present in the repository.
