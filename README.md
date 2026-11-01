@@ -1,11 +1,15 @@
 # Android Networking II: OkHttp, Retrofit, Moshi and Picasso
 
+> **Article companion — inactive.** This repository contains the sample code for
+> [Android Networking II: OkHttp, Retrofit, Moshi and Picasso](https://medium.com/@sotti/android-networking-ii-okhttp-retrofit-moshi-and-picasso-c381f6c0efd8) on Medium.
+> It is preserved for reference and is not under active development.
+
 ![Java](https://img.shields.io/badge/Java-Android-007396?logo=openjdk&logoColor=white)
 ![OkHttp](https://img.shields.io/badge/OkHttp-3.9.1-3E4348)
 ![Retrofit](https://img.shields.io/badge/Retrofit-2.3.0-48B983)
 ![Moshi](https://img.shields.io/badge/Moshi-1.5.0-6A5ACD)
 ![Picasso](https://img.shields.io/badge/Picasso-2.5.2-FFB000)
-![Status](https://img.shields.io/badge/status-historical%20sample-FFB000)
+![Status](https://img.shields.io/badge/status-inactive%20article%20companion-FFB000)
 
 A Java Android sample showing how OkHttp, Retrofit, Moshi, and Picasso fit
 together in a small networking app.
